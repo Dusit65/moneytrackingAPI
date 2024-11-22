@@ -34,7 +34,7 @@ if($result->rowCount() > 0){
             "moneyId" => strval($moneyId),
             "moneyDetail" => $moneyDetail,
             "moneyDate" => $moneyDate,
-            "moneyInOut" => $moneyInOut,
+            "moneyInOut" => strval($moneyInOut),
             "moneyType" => $moneyType,
             "userId" => strval($userId)
         );
