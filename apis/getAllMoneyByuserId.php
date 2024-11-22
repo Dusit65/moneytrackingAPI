@@ -31,12 +31,12 @@ if($result->rowCount() > 0){
         $resultArray = array(
             //list ข้อมูลที่จะส่งไปยัง client
             "message" => "1",
-            "moneyId" => $moneyId,
+            "moneyId" => strval($moneyId),
             "moneyDetail" => $moneyDetail,
             "moneyDate" => $moneyDate,
             "moneyInOut" => $moneyInOut,
             "moneyType" => $moneyType,
-            "userId" => $userId
+            "userId" => strval($userId)
         );
     
         array_push($resultInfo, $resultArray);
